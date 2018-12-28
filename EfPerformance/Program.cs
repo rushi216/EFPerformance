@@ -7,7 +7,7 @@ namespace EfPerformance
 {
     internal class Program
     {
-        private static readonly int iterationCount = 1000;
+        private static readonly int iterationCount = 50000;
 
         private static void Main(string[] args)
         {
@@ -113,7 +113,6 @@ namespace EfPerformance
                     var person = new Person();
                     person.Name = "Person " + i;
 
-                    //Change tracking started
                     dbContext.Person.Add(person);
                 }
 
